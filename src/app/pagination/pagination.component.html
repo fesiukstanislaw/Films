@@ -1,0 +1,9 @@
+<div class="pagination">
+  <a *ngIf="currentPage != 0" routerLink [queryParams]="{ page: convertToInt(currentPage) - 1 }" class="page-link">Previous</a>
+
+  <a *ngIf="currentPage != 0" routerLink [queryParams]="{ page: 0 }" class="page-link">First</a>
+  {{convertToInt(currentPage) + 1}}
+  ...
+  <a *ngIf="currentPage != convertToInt(lastPage) - 1" routerLink [queryParams]="{ page: convertToInt(lastPage) -1  }" class="page-link">Last</a>
+  <a routerLink [queryParams]="{ page: convertToInt(currentPage) + 1 }" class="page-link">Next</a>
+</div>

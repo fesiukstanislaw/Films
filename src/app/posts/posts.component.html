@@ -1,0 +1,22 @@
+<div class="main">
+<a *ngFor="let a of posts" routerLink routerLink="/film" routerLinkActive="active" [queryParams]="{ id: a.id}">
+  <div class="post-image">
+    <div class="post">
+      <div>
+        Title:
+        {{a.name}}
+      </div>
+      <div>
+        Genre:
+        {{a.genre1}}, {{a.genre2}}
+      </div>
+      <div>
+        Year:
+        {{a.year}}
+      </div>
+    </div>
+  </div>
+</a>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,15 @@
+.main{
+  margin: 0 40px 0 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 260px);
+}
+.post{
+  margin: 5px;
+}
+.post-image{
+  height: 280px;
+  margin: 15px;
+  background-color: darkslategrey;
+  display: grid;
+  align-items: end;
+}
